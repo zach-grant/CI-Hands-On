@@ -24,3 +24,4 @@ list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/contrib)
 include(CTest)
 
 add_subdirectory(FooTests)
+add_subdirectory(BarTests)
