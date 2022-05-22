@@ -3,7 +3,7 @@ Include(FetchContent)
 FetchContent_Declare(
     catch2
     GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-    GIT_TAG v2.13.9
+    GIT_TAG 62fd660583d3ae7a7886930b413c3c570e89786c
 )
 
 message(STATUS "Fetching Catch2 for unit testing...")
