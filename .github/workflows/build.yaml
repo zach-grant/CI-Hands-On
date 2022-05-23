@@ -5,8 +5,6 @@ jobs:
         runs-on: ubuntu-20.04
         steps:
             - uses: actions/checkout@v3
-              with:
-                  fetch-depth: 0
             - run: cd CI-Hands-On
             - run: mkdir build && cd build
             - run: cmake ../
