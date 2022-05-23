@@ -1,0 +1,10 @@
+name: Tests Demo
+on: workflow_call
+jobs:
+    Run-Tests:
+        runs-on: ubuntu-20.04
+        steps:
+            - uses: actions/download-artifact@v3
+              with:
+                  name: tests
+            - run: ctest

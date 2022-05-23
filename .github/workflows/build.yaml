@@ -1,5 +1,5 @@
 name: Build Demo
-on: [push]
+on: workflow_call
 jobs:
     Build:
         runs-on: ubuntu-20.04
@@ -9,3 +9,7 @@ jobs:
                    cd build &&
                    cmake ../ &&
                    make
+            - uses: actions/upload-artifact@v3
+              with:
+                  name: tests
+                  path: tests/
