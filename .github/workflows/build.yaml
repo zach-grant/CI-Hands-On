@@ -7,7 +7,7 @@ jobs:
             - uses: actions/checkout@v3
               with:
                   fetch-depth: 0
-            - run: cd ci-hands-on
+            - run: cd CI-Hands-On
             - run: mkdir build && cd build
             - run: cmake ../
             - run: make -$(nproc)
