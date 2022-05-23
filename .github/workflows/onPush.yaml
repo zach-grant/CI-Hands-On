@@ -4,9 +4,9 @@ jobs:
     Build:
         runs-on: ubuntu-20.04
         steps:
-            - uses: ./.github/workflows/build
+            - uses: ./.github/workflows/build.yaml
     Test:
         runs-on: ubuntu-20.04
         needs: Build
         steps:
-            - uses: ./.github/workflows/tests
+            - uses: ./.github/workflows/tests.yaml
