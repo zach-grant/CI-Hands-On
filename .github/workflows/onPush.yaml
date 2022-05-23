@@ -2,9 +2,7 @@ name: Build and Run Tests
 on: push
 jobs:
     Build:
-        runs-on: ubuntu-20.04
         uses: ./.github/workflows/build.yaml
     Test:
-        runs-on: ubuntu-20.04
         needs: Build
         uses: ./.github/workflows/tests.yaml
